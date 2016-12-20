@@ -1674,7 +1674,7 @@ input[type="button"] {
   //margin-top: 60px;
   //margin-bottom: 60px;
   background: rgba(31, 51, 64, 0.8);
-  //padding: 30px;
+  padding: 30px;
   color: #fff;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
