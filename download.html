@@ -36,6 +36,8 @@
 </script>
 </head> 
 
+
+
 <body class="download-page">   
     <!-- ******HEADER****** --> 
     <!-- ******HEADER****** --> 
@@ -55,6 +57,34 @@
                 </div><!--//navbar-header-->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
+
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "letmein") {
+alert('You Got it Right!');
+window.open('salesdeck.html');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3)  v
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+<CENTER>
+<FORM>
+<input type="button" value="Enter Protected Area" onClick="passWord()">
+</FORM>
+</CENTER>
+
                         <li class="active nav-item"><a href="index.html">Home</a></li>    
 
                          <li class="nav-item dropdown">
@@ -100,6 +130,8 @@
     <div class="headline-bg">
     </div><!--//headline-bg-->
 
+
+
     <!-- ******Apps Section****** --> 
     <section class="apps-section section section-on-bg">
         <div class="container">
@@ -115,7 +147,7 @@
                             <p>Please fill out the following information to schedule a product demo and we will reply as quick as possible. You can also call us at (678-762-9707) for a faster response.</p>
                         
 
-                        <form id="contact-form" class="contact-form" method="post" action="contact_me.php">
+                        <form id="contact-form" class="contact-form" method="post" action="https://formspree.io/sales@immcoinc.com">
 						<style>
 							tab1{ margin-left:2em;}
 						</style>
@@ -182,6 +214,8 @@
             </div><!--//row-->        
         </div><!--//container-->
     </section><!--//feature-video--> 
+
+
 
 
     <!-- ******FOOTER****** --> 
