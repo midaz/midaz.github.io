@@ -133,8 +133,10 @@
 								<input type="checkbox" name="mapzilla" value="mapzilla" id="mapzilla"> <label for="mapzilla">MapZilla Demo</label><tab1>
 								<input type="checkbox" name="custom" value="custom" id="custom"> <label for="custom">Custom Tools Demo</label>
 							<script>
-								if dock.checked = true
-								alert("hello");
+								if !(dock.checked = true || mapzilla.checked = true || custom.checked = true)
+									{
+										alert("hello");
+									}	
 							</script>
                             </div>
                         </div>
