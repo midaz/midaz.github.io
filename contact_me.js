@@ -1,7 +1,3 @@
-
-$(function() {
-
-
 									//<script language="javascript">
 									var d = document.getElementById("dock");
 									var m = document.getElementById("mapzilla");
@@ -10,15 +6,13 @@ $(function() {
 									if (d.checked == false || m.checked == false || m.checked == false || a.checked == false)
 										alert("Must select at least one demo!");
 									//</script>
-
-
+$(function() {
     $("input,textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
+
+
             // additional error messages or events
-
-
-
 if (
         
         submitSuccess: function($form, event) {
