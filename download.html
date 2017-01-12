@@ -104,8 +104,9 @@
     
     <div class="headline-bg">
     </div><!--//headline-bg-->
-
-
+<script language="javascript">
+    alert("Hello!");
+</script>
 
     <!-- ******Apps Section****** --> 
     <section class="apps-section section section-on-bg">
@@ -132,22 +133,8 @@
                                 <input type="checkbox" name="demo" value="dock" id="dock"> <label for="dock">DOCK Demo</label><tab1>
 								<input type="checkbox" name="demo" value="mapzilla" id="mapzilla"> <label for="mapzilla">MapZilla Demo</label><tab1>
 								<input type="checkbox" name="demo" value="custom" id="custom"> <label for="custom">Custom Tools Demo</label>
-								<script language="javascript">
-								function onSubmit() 
-{ 
-    var fields = $("input[name='demo']").serializeArray(); 
-    if (fields.length === 0) 
-    { 
-        alert('nothing selected'); 
-        // cancel submit
-        return false;
-    } 
-    else 
-    { 
-        alert(fields.length + " items selected"); 
-    }
-}
-</script>
+								
+
                             </div>
                         </div>
 
