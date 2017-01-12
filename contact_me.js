@@ -1,7 +1,8 @@
 
-alert("Must select at least one demo!");
+
 $(function() {
     $("input,textarea").jqBootstrapValidation({
+	alert("Must select at least one demo!");
         preventSubmit: true,
         submitError: function($form, event, errors) {
 
