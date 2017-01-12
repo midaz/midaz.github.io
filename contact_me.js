@@ -1,11 +1,5 @@
-									//<script language="javascript">
-									var d = document.getElementById("dock");
-									var m = document.getElementById("mapzilla");
-									var c = document.getElementById("custom");
-									var a = document.getElementById("all");
-									if (d.checked == false || m.checked == false || m.checked == false || a.checked == false)
-										alert("Must select at least one demo!");
-									//</script>
+
+alert("Must select at least one demo!");
 $(function() {
     $("input,textarea").jqBootstrapValidation({
         preventSubmit: true,
