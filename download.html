@@ -185,9 +185,11 @@
 									var c = document.getElementById("custom");
 									var a = document.getElementById("all");
 
-									do {
+									if (d.checked == false && m.checked == false && m.checked == false && c.checked == false && a.checked == false)
+									{
 										alert("Must select at least one demo!");	
-									} while (d.checked == false && m.checked == false && m.checked == false && c.checked == false && a.checked == false);
+										return false;
+									}
 									}
 									</script>
 									<button type="submit" class="btn btn-outline-dark" onClick="check()"><font color = "black">Send</font></button>
