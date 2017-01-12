@@ -177,7 +177,7 @@
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-outline-dark" onClick="check()"><font color = "black">Send</font></button>
+                                
 									<script language="javascript">
 									function check() {
 									var d = document.getElementById("dock");
@@ -186,9 +186,10 @@
 									var a = document.getElementById("all");
 									if (d.checked == false && m.checked == false && m.checked == false && c.checked == false && a.checked == false)
 										alert("Must select at least one demo!");		
-										check();																
+																									
 									}
 									</script>
+									<button type="submit" class="btn btn-outline-dark" onClick="check()"><font color = "black">Send</font></button>
                             </div>
                         </div>
 						
