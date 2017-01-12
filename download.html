@@ -132,7 +132,23 @@
                                 <input type="checkbox" name="dock" value="dock" id="dock"> <label for="dock">DOCK Demo</label><tab1>
 								<input type="checkbox" name="mapzilla" value="mapzilla" id="mapzilla"> <label for="mapzilla">MapZilla Demo</label><tab1>
 								<input type="checkbox" name="custom" value="custom" id="custom"> <label for="custom">Custom Tools Demo</label>
-								
+								<script language="javascript">
+								function valthisform()
+								{
+    								var checkboxs=document.getElementsByType("checkbox");
+    								var okay=false;
+    								for(var i=0,l=checkboxs.length;i<l;i++)
+    								{
+        								if(checkboxs[i].checked)
+        								{
+            								okay=true;
+            								break;
+        								}
+    								}
+    								if(okay)alert("Thank you for checking a checkbox");
+    								else alert("Please check a checkbox");
+								}
+								</script>
                             </div>
                         </div>
 
