@@ -137,16 +137,12 @@
 								{
     								var checkboxs=document.getElementsById("dock");
     								var okay=false;
-    								for(var i=0,l=checkboxs.length;i<l;i++)
-    								{
-        								if(checkboxs[i].checked)
-        								{
-            								okay=true;
+        								if(checkboxs.checked)
+        								{    
+											alert("Thank you for checking a checkbox");
             								break;
         								}
     								}
-    								if(okay)alert("Thank you for checking a checkbox");
-    								else alert("Please check a checkbox");
 								}
 								</script>
                             </div>
