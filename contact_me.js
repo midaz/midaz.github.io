@@ -1,8 +1,9 @@
 
 
 $(function() {
-    $("input,textarea").jqBootstrapValidation({
 	alert("Must select at least one demo!");
+    $("input,textarea").jqBootstrapValidation({
+
         preventSubmit: true,
         submitError: function($form, event, errors) {
 
