@@ -133,13 +133,28 @@
 						</style>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <input type="checkbox" name="demo" value="dock" id="dock" onchange="contact-form.getElementById("send").disabled = !this.checked;"> <label for="dock">DOCK </label><tab1>
+                                <input type="checkbox" name="demo" value="dock" id="dock"> <label for="dock">DOCK </label><tab1>
 								<input type="checkbox" name="demo" value="mapzilla" id="mapzilla"> <label for="mapzilla">MapZilla</label><tab1>
 								<input type="checkbox" name="demo" value="custom" id="custom"> <label for="custom">Custom Tools</label><tab1>
 								<input type="checkbox" name="demo" value="all" id="all"> <label for="all">All Products</label>
 
                             </div>
                         </div>
+
+									<script language="javascript">
+									
+									function check(send) {
+									var d = document.getElementById("dock");
+									var m = document.getElementById("mapzilla");
+									var c = document.getElementById("custom");
+									var a = document.getElementById("all")						 
+                                    while (d.checked == false && m.checked == false && c.checked == false && a.checked == false) {
+										send.disabled = true;	
+										break;		
+									}
+									} 
+									
+									</script>
 
 
 
@@ -179,7 +194,7 @@
                             <div class="form-group col-xs-12">
                                 
 									
-									<button type="submit" name="send" class="btn btn-outline-dark"><font color = "black">Send</font></button>
+									<button type="submit" name="send" class="btn btn-outline-dark" onclick="check(this);"><font color = "black">Send</font></button>
                            </div>
                         </div>
 						
