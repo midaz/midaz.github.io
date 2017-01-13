@@ -133,7 +133,7 @@
 						</style>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <input type="checkbox" name="demo" value="dock" id="dock"> <label for="dock">DOCK </label><tab1>
+                                <input type="checkbox" onchange="contact-form.getElementById('send').disabled = ! this.checked;" name="demo" value="dock" id="dock"> <label for="dock">DOCK </label><tab1>
 								<input type="checkbox" name="demo" value="mapzilla" id="mapzilla"> <label for="mapzilla">MapZilla</label><tab1>
 								<input type="checkbox" name="demo" value="custom" id="custom"> <label for="custom">Custom Tools</label><tab1>
 								<input type="checkbox" name="demo" value="all" id="all"> <label for="all">All Products</label>
@@ -149,7 +149,7 @@
 									var c = document.getElementById("custom");
 									var a = document.getElementById("all")						 
                                     
-										send.disabled = true;	
+										send.disabled = false;	
 	
 									}
 									
@@ -194,7 +194,7 @@
                             <div class="form-group col-xs-12">
                                 
 									
-									<button type="submit" name="send" class="btn btn-outline-dark" disabled><font color = "black">Send</font></button>
+									<button type="submit" id="send" class="btn btn-outline-dark" disabled><font color = "black">Send</font></button>
                            </div>
                         </div>
 						
