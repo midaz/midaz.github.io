@@ -179,19 +179,21 @@
                             <div class="form-group col-xs-12">
                                 
 									<script language="javascript">
+									var ch = true;
 									function check() {
 									var d = document.getElementById("dock");
 									var m = document.getElementById("mapzilla");
 									var c = document.getElementById("custom");
 									var a = document.getElementById("all")						 
-                                    if (d.checked == false && m.checked == false && c.checked == false && a.checked == false)
+                                    if (d.checked == false && m.checked == false && c.checked == false && a.checked == false) {
+										ch = false;
+									}
+									if (ch == false) {
                                     	alert("Must select at least one demo!");
 									}
+								}
+									</script>
 									<button type="submit" class="btn btn-outline-dark" onClick="check();"><font color = "black">Send</font></button>
-									
-
-							</script>
-
                            </div>
                         </div>
 						
